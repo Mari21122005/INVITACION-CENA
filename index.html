@@ -1,0 +1,86 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <title>Invitación a cenar</title>
+  </head>
+  <body>
+  <div class="envelope-container">
+      <div class="envelope" id="envelope" onclick="openInvitation()">
+          <div class="invitation" id="invitation">
+              <h1>¡INVITACIÓN A CENAR DÍA DEL PADRE!</h1>
+              <img src="IMG-20240301-WA0030.jpg" alt="Imagen de la cena"><img src="IMG-20240301-WA0077.jpg" alt="Imagen de la cena">
+              <p>Nos encantaría que nos acompañaras a celebrar en familia el día del padre.</p>
+              <p>Fecha: 8 de junio de 2024</p>
+              <p>Hora: 8:00 o 9:00 P.M</p>
+              <p>Lugar: Sorpresa</p>
+          </div>
+      </div>
+
+      <div class="envelope" id="envelope2" onclick="openInvitation2()">
+          <div class="invitation" id="invitation2">
+              <div>
+                  <p>TE ESPERAMOS CON TU MEJOR PINTA NO LO OLVIDES. </p> 
+                  <p>ATT:TU FAMILIA</p>
+                  <img src="IMG-20240301-WA0013.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0035.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0004.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0002.jpg" alt="Imagen de la cena">
+              </div>
+          </div>
+      </div>
+
+      <div class="envelope" id="envelope3" onclick="openInvitation3()">
+          <div class="invitation" id="invitation3">
+              <div>
+                <P>TE QUEREMOS MUCHO TU FAMILIA</P>
+                  <img src="IMG-20240301-WA0011.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0017.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0076.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0075.jpg" alt="Imagen de la cena">  
+                  <img src="IMG-20240301-WA0055.jpg" alt="Imagen de la cena">
+                  <img src="IMG-20240301-WA0095.jpg" alt="Imagen de la cena">
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div>
+      <button onclick="playAudio()">
+          <img src="play-button.png" alt="Reproducir">
+      </button>
+  </div>
+
+  <audio loop>
+      <source src="Cancion.mp3".mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+
+  <script>
+      function openInvitation() {
+          var invitation = document.getElementById('invitation');
+          invitation.classList.add('active');
+          invitation.style.opacity = '1';
+      }
+
+      function playAudio() {
+          var audio = document.querySelector('audio');
+          audio.play();
+      }
+
+      function openInvitation2() {
+          var invitation2 = document.getElementById('invitation2');
+          invitation2.classList.add('active');
+          invitation2.style.opacity = '1';
+      }
+
+      function openInvitation3() {
+          var invitation3 = document.getElementById('invitation3');
+          invitation3.classList.add('active');
+          invitation3.style.opacity = '1';
+      }
+  </script>
+  </body>
+  </html>

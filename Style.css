@@ -1,0 +1,132 @@
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #2ecc71 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color: #f8f9fa;
+}
+
+.envelope-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.envelope {
+    width: 400px; 
+    height: 480px; 
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.envelope:hover {
+    transform: translateY(-10px);
+}
+
+.invitation {
+    opacity: 0;
+    transition: opacity 5s; 
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+.invitation.active {
+    opacity: 1;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+}
+
+img {
+    max-width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#envelope2 img {
+    max-width: 40%;
+    height: 40%;
+    margin-bottom: 40px;
+}
+
+#envelope2 .image-container {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+#envelope2 .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#envelope2 h1,
+#envelope2 p {
+    font-size: 15px;
+    line-height: 1.5;
+    color:#2ecc71;
+}
+
+#envelope3 img {
+    max-width: 40%;
+    height: 40%;
+    margin-bottom: 40px;
+}
+
+#envelope3 .image-container {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+#envelope3 .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#envelope3 h1,
+#envelope3 p {
+    font-size: 15px;
+    line-height: 1.5;
+    color:#667eea;
+}
+
+
